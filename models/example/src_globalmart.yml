@@ -1,0 +1,16 @@
+version: 2
+
+
+sources:
+  - name: GLOBALMART
+    database: RAW
+    schema: GLOBALMART
+    tables:
+      - name: ORDERS
+      - name: PRODUCTS
+      - name: CUSTOMERS
+        # columns:
+        #   loaded_at_field: loaded_at
+        # freshness:
+        #   warn_after: {count: 12, period: hour}
+        #   error_after: {count: 24, period: hour}
